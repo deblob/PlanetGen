@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PlanetGenSettings GeneratedWithVersion="0.3.3.0">
+  <Bool Name="DEBUG_RENDER_MISC" Value="True" />
+  <Int32 Name="ALL_RES_X" Value="2048" />
+  <Int32 Name="ALL_RES_Y" Value="1024" />
+  <Int32 Name="ALL_RANDOM_SEED" Value="-1" />
+  <Int32 Name="MOUNTAINS_BRIGHTNESS_INCREASE" Value="4" />
+  <Bool Name="MOUNTAINS_LIGHT_TO_DARK" Value="True" />
+  <Int32 Name="MOUNTAINS_RANDOM_COLOR_MIN_VALUE" Value="100" />
+  <Int32 Name="MOUNTAINS_RANDOM_COLOR_MAX_VALUE" Value="150" />
+  <Int32 Name="MOUNTAINS_PARALLAX_OFFSET" Value="6" />
+  <Int32 Name="MOUNTAINS_PARALLAX_SLICES" Value="30" />
+  <Bool Name="MOUNTAINS_PARALLAX_GRADIENT" Value="True" />
+  <Float Name="MOUNTAINS_PARALLAX_GRADIENT_SCALE" Value="0,35" />
+  <Float Name="MOUNTAINS_HEIGHT_SCALE" Value="1" />
+  <EnumNoiseType Name="MOUNTAINS_NOISE_TYPE" Value="CubicFractal" />
+  <Float Name="MOUNTAINS_NOISE_FREQUENCY" Value="0,01" />
+  <Int32 Name="SKY_RANDOM_COLOR_MIN_VALUE" Value="60" />
+  <Int32 Name="SKY_RANDOM_COLOR_MAX_VALUE" Value="150" />
+  <Int32 Name="SKY_COLOR_DIFFERENCE" Value="65" />
+  <Float Name="SKY_FOG_HEIGHT" Value="0,4" />
+  <Float Name="SKY_FOG_OPACITY" Value="0,8" />
+  <Bool Name="SKY_FOG_DARK" Value="True" />
+  <Int32 Name="TRABANT_MIN_AMMOUNT" Value="1" />
+  <Int32 Name="TRABANT_MAX_AMMOUNT" Value="3" />
+  <Float Name="TRABANT_SCALE" Value="1" />
+  <Float Name="TRABANT_OPACITY" Value="0,125" />
+  <EnumNoiseType Name="TRABANT_SURFACE_NOISE_TYPE" Value="CubicFractal" />
+  <Float Name="TRABANT_SURFACE_NOISE_FREQUENCY" Value="0,0095" />
+  <Int32 Name="TRABANT_SURFACE_COLOR1_MIN_VALUE" Value="150" />
+  <Int32 Name="TRABANT_SURFACE_COLOR1_MAX_VALUE" Value="220" />
+  <Int32 Name="TRABANT_SURFACE_COLOR2_MIN_VALUE" Value="90" />
+  <Int32 Name="TRABANT_SURFACE_COLOR2_MAX_VALUE" Value="160" />
+  <Float Name="TRABANT_SURFACE_COLOR_THRESHOLD" Value="0,5" />
+  <Bool Name="TRABANT_CLOUDS_ENABLED" Value="True" />
+  <EnumNoiseType Name="TRABANT_CLOUDS_NOISE_TYPE" Value="CubicFractal" />
+  <Float Name="TRABANT_CLOUDS_NOISE_FREQUENCY" Value="0,038" />
+  <Float Name="TRABANT_CLOUDS_OPACITY" Value="0,85" />
+  <Int32 Name="TRABANT_CLOUDS_COLOR_MIN_VALUE" Value="230" />
+  <Int32 Name="TRABANT_CLOUDS_COLOR_MAX_VALUE" Value="255" />
+  <Bool Name="TRABANT_FRESNEL_ENABLED" Value="True" />
+  <Float Name="TRABANT_FRESNEL_INTENSITY" Value="0,55" />
+  <Int32 Name="TRABANT_FRESNEL_RADIUS" Value="10" />
+  <Int32 Name="TRABANT_BLUR_RADIUS" Value="0" />
+  <Bool Name="TRABANT_BLUR_USE_EDGEBLUR" Value="False" />
+</PlanetGenSettings>

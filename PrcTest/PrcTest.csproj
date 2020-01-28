@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55A40DFE-CA69-456B-82DB-EF02958AE56E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PrcTest</RootNamespace>
+    <AssemblyName>PrcTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimationController.cs" />
+    <Compile Include="Attributes\ConfigAttribute.cs" />
+    <Compile Include="FastNoise.cs" />
+    <Compile Include="PlanetGenerator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ctrlBoolController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ctrlBoolController.Designer.cs">
+      <DependentUpon>ctrlBoolController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ctrlEnumController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ctrlEnumController.Designer.cs">
+      <DependentUpon>ctrlEnumController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ctrlFloatController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ctrlFloatController.Designer.cs">
+      <DependentUpon>ctrlFloatController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\IController.cs" />
+    <Compile Include="UI\ctrlIntController.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ctrlIntController.Designer.cs">
+      <DependentUpon>ctrlIntController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ctrlBoolController.resx">
+      <DependentUpon>ctrlBoolController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ctrlEnumController.resx">
+      <DependentUpon>ctrlEnumController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ctrlFloatController.resx">
+      <DependentUpon>ctrlFloatController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ctrlIntController.resx">
+      <DependentUpon>ctrlIntController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
