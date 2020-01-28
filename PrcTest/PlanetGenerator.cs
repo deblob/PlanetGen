@@ -94,11 +94,11 @@ namespace PrcTest
         public int TRABANT_CLOUDS_COLOR_MIN_VALUE = 230;
         [Config()]
         public int TRABANT_CLOUDS_COLOR_MAX_VALUE = 255;
-        [Config("Better not use this. Looks like shit 99% of the time...")]
+        [Config("Better not use this. Doesn't look very good 99% of the time...")]
         public bool TRABANT_FRESNEL_ENABLED = true;
-        [Config("Poop.", 0.0001f, 1f)]
+        [Config("", 0.0001f, 1f)]
         public float TRABANT_FRESNEL_INTENSITY = .6f;
-        [Config("Shiiieeet...")]
+        [Config("")]
         public int TRABANT_FRESNEL_RADIUS = 8;
         [Config("Determines how much the planets in the background are blurred. Has a huge performance hit with higher radii (because I suck at coding). Set to 0 for no blur.", 0, 99)]
         public int TRABANT_BLUR_RADIUS = 2;
@@ -405,7 +405,7 @@ namespace PrcTest
             return result;
         }
 
-        // ToDo: wieder zu einem einfachen Blur machen, ohne die BG Gradient Scheiße. Dafür Trabs nicht direkt auf den Himmel zeichnen, sondern
+        // ToDo: wieder zu einem einfachen Blur machen, ohne die BG Gradients. Dafür Trabs nicht direkt auf den Himmel zeichnen, sondern
         //       einen Ausschnitt, der größer ist, als der Trab vom BG nehmen, den Trab 'draufstampen', das ganze Teil blurren und dann an
         //       entsprechender Stelle über den Himmel zeichnen.
         private Bitmap applyGaussianBlur( Bitmap img, int radius, int[] backgroundGradient = null )
